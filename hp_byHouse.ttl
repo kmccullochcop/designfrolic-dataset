@@ -1,0 +1,452 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix db: <https://dbpedia.org/ontology/> .
+@prefix owl: <https://www.w3.org/2002/07/owl#> .
+@prefix cwrc: <https://sparql.cwrc.ca/ontologies/cwrc.html#> .
+@prefix hp: <https://kmccullochcop.gitlab.io/designfrolics/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+wd:Q3278614 rdfs:label "Andromeda Tonks"@en ;
+    cwrc:hasChild wd:Q715312;
+    cwrc:hasSibling wd:Q1057918,
+      wd:Q1250338;
+    cwrc:hasGrandChild wd:Q3740882;
+    cwrc:hasCousin wd:Q713701,
+      wd:Q1770841;
+    cwrc:auntOf wd:Q179641;
+    rdf:type wd:SlytherinStudent .
+
+wd:Q3740882 rdfs:label "Ted Tonks"@en ;
+    cwrc:hasMother wd:Q715312;
+    cwrc:hasFather wd:Q208657;
+    cwrc:hasGrandMother wd:Q3278614;
+    rdf:type wd:Wizard .
+
+wd:Q208657 rdfs:label "Remus Lupin"@en ;
+    cwrc:hasWife wd:Q715312;
+    cwrc:hasChild wd:Q3740882;
+    rdf:type wd:Wizard .
+
+wd:Q715312 rdfs:label "Nymphadora Tonks"@en ;
+    cwrc:descendentOf wd:Q15269539;
+    cwrc:hasRelative wd:Q713701;
+    cwrc:hasAunt wd:Q1057918,
+      wd:Q1250338;
+    cwrc:hasHusband wd:Q208657;
+    cwrc:hasMother wd:Q3278614;
+    cwrc:hasChild wd:Q3740882;
+    cwrc:hasGrandFather wd:Q15272723;
+    cwrc:hasCousin wd:Q179641;
+    rdf:type wd:HufflepuffStudent .
+
+wd:Q15272723 rdfs:label "Cygnus Black III"@en ;
+    rdf:type wd:SlytherinStudent;
+    cwrc:hasGrandChild wd:Q715312,
+      wd:Q179641;
+    cwrc:hasChild wd:Q1250338,
+      wd:Q1057918,
+      wd:Q3278614;
+    cwrc:hasSibling wd:Q6594826;
+    cwrc:descendentOf wd:Q713701I;
+    a foaf:Person;
+    foaf:name "Cygnus Black III".
+
+wd:Q15272727 rdfs:label "Druella Rosier"@en ;
+    cwrc:hasGrandChild wd:Q715312,
+      wd:Q179641;
+    cwrc:hasChild wd:Q1250338,
+      wd:Q1057918,
+      wd:Q3278614;
+    rdf:type  wd:Wizard.
+
+wd:Q713701 rdfs:label "Sirius Black"@en ;
+    cwrc:descendentOf wd:Q15269539;
+    cwrc:hasSibling wd:Q1770841;
+    cwrc:hasAunt wd:Q15272727;
+    cwrc:hasCousin wd:Q1057918,
+      wd:Q1250338,
+      wd:Q3278614;
+    db:killedBy wd:Q1057918 ;
+    cwrc:hasFather wd:Q6052969 ;
+    cwrc:hasMother wd:Q6594826 ;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q15269539 rdfs:label "Sirius Black I"@en ;
+    cwrc:hasDescendent wd:Q15272723 ,
+      wd:Q6052969 ,
+      wd:Q6594826 ,
+      wd:Q713701 ,
+      wd:Q3278614 ,
+      wd:Q1057918 ,
+      wd:Q1250338 ,
+      wd:Q1770841 ,
+      wd:Q715312 ,
+      wd:Q179641 ;
+    rdf:type  wd:Wizard .
+
+wd:Q1770841 rdfs:label "Regulus Black"@en ;
+    cwrc:descendentOf wd:Q15269539;
+    cwrc:hasSibling wd:Q713701;
+    cwrc:hasAunt wd:Q15272727;
+    cwrc:hasCousin wd:Q1057918,
+      wd:Q1250338,
+      wd:Q3278614;
+    db:killedBy wd:Q1057918 ;
+    cwrc:hasFather wd:Q6052969 ;
+    cwrc:hasMother wd:Q6594826 ;
+    rdf:type wd:SlytherinStudent .
+
+wd:Q6052969 rdfs:label "Orion Black"@en ;
+    cwrc:hasWife wd:Q6594826;
+    cwrc:hasChild wd:Q713701,
+      wd:Q1770841;
+    cwrc:descendentOf wd:Q15269539;
+    rdf:type wd:SlytherinStudent .
+
+wd:Q6594826 rdfs:label "Walburga Black"@en ;
+    cwrc:hasHusband wd:Q6052969;
+    cwrc:hasChild wd:Q713701,
+      wd:Q1770841;
+    cwrc:descendentOf wd:Q15272723,
+      wd:Q713701I;
+    rdf:type wd:SlytherinStudent .
+
+wd:Q1250338 rdfs:label "Narcissa Malfoy"@en ;
+    cwrc:descendentOf wd:Q15269539;
+    cwrc:hasMother wd:Q15272727;
+    cwrc:hasFather wd:Q15272723;
+    cwrc:auntOf wd:Q715312;
+    cwrc:hasSister wd:Q3278614,
+      wd:Q1057918;
+    cwrc:hasCousin wd:Q713701,
+      wd:Q1770841;
+    cwrc:hasChild wd:Q179641;
+    cwrc:hasHusband wd:Q842178;
+    rdf:type wd:SlytherinStudent .
+
+wd:Q1057918 rdfs:label "Bellatrix Lestrange"@en ;
+    cwrc:descendentOf wd:Q15269539;
+    cwrc:hasMother wd:Q15272727;
+    cwrc:hasFather wd:Q15272723;
+    cwrc:auntOf wd:Q715312,
+      wd:Q179641;
+    cwrc:hasSister wd:Q3278614,
+      wd:Q1250338;
+    cwrc:hasCousin wd:Q713701,
+      wd:Q1770841;
+    rdf:type wd:SlytherinStudent .
+
+wd:Q176772 rdfs:label "Severus Snape"@en ;
+    rdf:type wd:SlytherinStudent  .
+
+wd:Q179641 rdfs:label "Draco Malfoy"@en ;
+    cwrc:descendentOf wd:Q15269539;
+    cwrc:hasFather wd:Q842178;
+    cwrc:hasMother wd:Q1250338;
+    cwrc:hasAunt wd:Q1057918,
+      wd:Q3278614;
+    cwrc:hasCousin wd:Q715312;
+    rdf:type wd:SlytherinStudent .
+
+wd:Q842178 rdfs:label "Lucius Malfoy"@en ;
+    cwrc:hasChild wd:Q179641 ;
+    cwrc:hasWife wd:Q1250338 ;
+    rdf:type wd:SlytherinStudent .
+
+wd:Q2182794 rdfs:label "Tom Riddle"@en ;
+    cwrc:hasChild wd:Q176132;
+    owl:differentFrom wd:Q176132 ;
+    rdf:type wd:muggle .
+
+wd:Q2787631 rdfs:label "Pigwidgeon"@en ;
+    db:owner wd:Q173998;
+    rdf:type wd:owl.
+
+wd:Q3234008 rdfs:label "Fawkes"@en ;
+    db:owner wd:Q712548 ;
+    rdf:type  wd:phoenix .
+
+wd:Q5153269 rdfs:label "Merope Gaunt"@en ;
+    cwrc:hasChild wd:Q176132 ;
+    rdf:type wd:Wizard .
+
+wd:Q5959014 rdfs:label "Kendra Dumbledore"@en ;
+    cwrc:hasChild wd:Q712548,
+      wd:Q904719,
+      wd:Q1875912;
+    cwrc:hasHusband wd:Q6072130;
+    rdf:type wd:Wizard .
+
+wd:Q6072130 rdfs:label "Percival Dumbledore"@en ;
+    cwrc:hasChild wd:Q712548,
+      wd:Q904719,
+      wd:Q1875912;
+    cwrc:hasWife wd:Q5959014;
+    rdf:type wd:Wizard .
+
+wd:Q712548 rdfs:label "Albus Dumbledore"@en ;
+    db:killedBy wd:Q176772 ;
+    db:owns wd:Q3234008 ;
+    cwrc:hasFather wd:Q6072130 ;
+    cwrc:hasMother wd:Q5959014 ;
+    rdf:type wd:GryffindorStudent ;
+    cwrc:hasBiographicalRelationTo wd:Q1377227,
+        wd:Q3244512 ;
+    cwrc:hasSibling wd:Q1875912,
+        wd:Q904719 ;
+    db:enemy wd:Q1377227,
+        wd:Q176132 ;
+    cwrc:hasStudent wd:Q1190608 .
+
+wd:Q904719 rdfs:label "Aberforth Dumbledore"@en ;
+    cwrc:hasMother wd:Q5959014 ;
+    cwrc:hasFather wd:Q6072130 ;
+    cwrc:hasSibling wd:Q712548,
+      wd:Q1875912 ;
+    rdf:type wd:Wizard .
+
+wd:Q928596 rdfs:label "Salazar Slytherin"@en ;
+    cwrc:relativeOf wd:Q176132 ;
+    rdf:type wd:Wizard.
+
+wd:Q1377227 rdfs:label "Gellert Grindelwald"@en ;
+    cwrc:hasBiographicalRelationTo wd:Q712548 ;
+    rdf:type wd:Wizard .
+
+wd:Q1875912 rdfs:label "Ariana Dumbledore"@en ;
+    cwrc:hasMother wd:Q5959014 ;
+    cwrc:hasFather wd:Q6072130 ;
+    cwrc:hasSibling wd:Q712548,
+      wd:Q904719 ;
+    rdf:type wd:Wizard .
+
+wd:Q3430858 rdfs:label "Charlie Weasley"@en ;
+    cwrc:hasFather wd:Q7881262 ;
+    cwrc:hasMother wd:Q3255012 ;
+    cwrc:hasSibling wd:Q3174865,
+        wd:Q173998,
+        wd:Q187923,
+        wd:Q13359612,
+        wd:Q13359613,
+        wd:Q3284911;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q3284911 rdfs:label "Percy Weasley"@en ;
+    cwrc:hasFather wd:Q7881262 ;
+    cwrc:hasMother wd:Q3255012 ;
+    cwrc:hasSibling wd:Q3174865,
+        wd:Q173998,
+        wd:Q187923,
+        wd:Q13359612,
+        wd:Q13359613,
+        wd:Q3430858;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q7881262 rdfs:label "Arthur Weasley"@en ;
+    cwrc:hasChild wd:Q3174865,
+        wd:Q3430858,
+        wd:Q173998,
+        wd:Q187923,
+        wd:Q13359612,
+        wd:Q13359613,
+        wd:Q3284911;
+    cwrc:hasGrandChild wd:Q3741059,
+      wd:Q3744404;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q173998 rdfs:label "Ron Weasley"@en ;
+    db:owns wd:Q2787631 ;
+    cwrc:hasFather wd:Q7881262 ;
+    cwrc:hasMother wd:Q3255012 ;
+    cwrc:hasSibling wd:Q3174865,
+        wd:Q3430858,
+        wd:Q187923,
+        wd:Q13359612,
+        wd:Q13359613,
+        wd:Q3284911;
+    cwrc:hasWife wd:Q174009 ;
+    rdf:type wd:GryffindorStudent;
+    cwrc:hasChild wd:Q3741059,
+        wd:Q3744404 ;
+    db:enemy wd:Q176132 .
+
+wd:Q187923 rdfs:label "Ginny Weasley"@en ;
+    cwrc:hasFather wd:Q7881262 ;
+    cwrc:hasMother wd:Q3255012 ;
+    cwrc:hasSibling wd:Q3174865,
+        wd:Q3430858,
+        wd:Q187923,
+        wd:Q13359612,
+        wd:Q13359613,
+        wd:Q3284911;
+    cwrc:hasHusband wd:Q3244512 ;
+    rdf:type wd:GryffindorStudent;
+    cwrc:hasChild wd:Q3745681,
+        wd:Q3256600,
+        wd:Q9010722;
+    cwrc:hasPartner wd:Q12498478,
+        wd:Q3226215 ;
+    db:enemy wd:Q176132 .
+
+wd:Q13359612 rdfs:label "Fred Weasley"@en ;
+    cwrc:hasFather wd:Q7881262 ;
+    cwrc:hasMother wd:Q3255012 ;
+    cwrc:hasSibling wd:Q3174865,
+        wd:Q3430858,
+        wd:Q187923,
+        wd:Q173998,
+        wd:Q13359613,
+        wd:Q3284911;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q13359613 rdfs:label "George Weasley"@en ;
+    cwrc:hasFather wd:Q7881262 ;
+    cwrc:hasMother wd:Q3255012 ;
+    cwrc:hasSibling wd:Q3174865,
+        wd:Q3430858,
+        wd:Q187923,
+        wd:Q173998,
+        wd:Q13359612,
+        wd:Q3284911;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q3174865 rdfs:label "Bill Weasley"@en ;
+    cwrc:hasFather wd:Q7881262 ;
+    cwrc:hasMother wd:Q3255012 ;
+    cwrc:hasSibling wd:Q173998,
+        wd:Q3430858,
+        wd:Q187923,
+        wd:Q13359612,
+        wd:Q13359613 ,
+        wd:Q3284911;
+    rdf:type wd:GryffindorStudent.
+
+wd:Q3255012 rdfs:label "Molly Weasley"@en ;
+    cwrc:hasChild wd:Q3174865,
+        wd:Q3430858,
+        wd:Q173998,
+        wd:Q187923,
+        wd:Q13359612,
+        wd:Q13359613,
+        wd:Q3284911;
+    cwrc:hasGrandChild wd:Q3741059,
+      wd:Q3744404;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q174009 rdfs:label "Hermione Granger"@en ;
+    cwrc:hasHusband wd:Q173998;
+    cwrc:hasChild wd:Q3741059,
+      wd:Q3744404;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q3741059 rdfs:label "Hugo Granger-Weasley"@en ;
+    cwrc:hasMother wd:Q174009 ;
+    cwrc:hasFather wd:Q173998 ;
+    cwrc:hasSibling wd:Q3744404 ;
+    rdf:type wd:Wizard .
+
+wd:Q3744404 rdfs:label "Rose Granger-Weasley"@en ;
+    cwrc:hasMother wd:Q174009 ;
+    cwrc:hasFather wd:Q173998 ;
+    cwrc:hasSibling wd:Q3741059 ;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q717594 rdfs:label "James Potter"@en ;
+    cwrc:hasChild wd:Q3244512;
+    cwrc:hasWife wd:Q754837 ;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q754837 rdfs:label "Lily Potter"@en ;
+    cwrc:hasChild wd:Q3244512;
+    cwrc:hasHusband wd:Q717594;
+    cwrc:hasSister wd:Q1963397;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q9010722 rdfs:label "James Sirius Potter"@en ;
+    cwrc:hasMother wd:Q187923;
+    cwrc:hasFather wd:Q3244512;
+    cwrc:hasSibling wd:Q3256600,
+      wd:Q3745681;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q3244512 rdfs:label "Harry Potter"@en ;
+    db:owns wd:Q845210 ;
+    cwrc:hasUncle wd:Q11910388 ;
+    cwrc:hasAunt wd:Q1963397 ;
+    cwrc:hasCousin wd:Q5700415 ;
+    cwrc:hasFather wd:Q717594 ;
+    cwrc:hasMother wd:Q754837 ;
+    cwrc:hasWife wd:Q187923 ;
+    rdf:type  wd:GryffindorStudent ;
+    cwrc:hasChild wd:Q3256600,
+        wd:Q3745681,
+        wd:Q9010722 ;
+    db:enemy wd:Q176132,
+        wd:Q179641 .
+
+wd:Q3745681 rdfs:label "Lily Luna Potter"@en ;
+    cwrc:hasMother wd:Q187923;
+    cwrc:hasFather wd:Q3244512;
+    cwrc:hasSibling wd:Q3256600,
+      wd:Q9010722;
+    rdf:type   wd:GryffindorStudent .
+
+wd:Q3256600 rdfs:label "Albus Severus Potter"@en ;
+    cwrc:hasMother wd:Q187923;
+    cwrc:hasFather wd:Q3244512;
+    cwrc:hasSibling wd:Q9010722,
+      wd:Q3745681;
+    rdf:type wd:SlytherinStudent .
+
+wd:Q11910388 rdfs:label "Vernon Dursley"@en ;
+    cwrc:hasWife wd:Q1963397;
+    cwrc:hasChild wd:Q5700415;
+    cwrc:hasNephew wd:Q3244512;
+    rdf:type wd:muggle .
+
+wd:Q1963397 rdfs:label "Petunia Dursley"@en ;
+    cwrc:hasHusband wd:Q11910388;
+    cwrc:hasChild wd:Q5700415;
+    cwrc:hasNephew wd:Q3244512;
+    cwrc:hasSister wd:Q754837 ;
+    rdf:type wd:muggle .
+
+wd:Q5700415 rdfs:label "Dudley Dursley"@en ;
+    cwrc:hasMother wd:Q1963397 ;
+    cwrc:hasFather wd:Q11910388 ;
+    cwrc:hasAunt wd:Q754837 ;
+    cwrc:hasCousin wd:Q3244512 ;
+    rdf:type wd:muggle .
+
+wd:Q176132 rdfs:label "Lord Voldemort"@en ;
+    cwrc:relativeOf wd:Q928596 ;
+    db:killedBy wd:Q3244512 ;
+    db:owns wd:Q845403 ;
+    cwrc:hasFather wd:Q2182794 ;
+    cwrc:hasMother wd:Q5153269 ;
+    rdf:type wd:SlytherinStudent ;
+    cwrc:hasPartner wd:Q1057918 ;
+    db:enemy wd:Q3244512,
+        wd:Q712548 .
+
+wd:Q1190608 rdfs:label "Newt Scamander"@en ;
+    rdf:type wd:HufflepuffStudent .
+
+wd:Q12498478 rdfs:label "Michael Corner"@en ;
+    cwrc:hasPartner wd:Q187923 ;
+    rdf:type wd:RavenclawStudent .
+
+wd:Q3226215 rdfs:label "Dean Thomas"@en ;
+    cwrc:hasPartner wd:Q187923 ;
+    rdf:type wd:GryffindorStudent .
+
+wd:Q845210 rdfs:label "Hedwig"@en ;
+    db:owner wd:Q3244512 ;
+    rdf:type wd:owl .
+
+wd:Q845403 rdfs:label "Nagini"@en ;
+    db:owner wd:Q176132 ;
+    rdf:type wd:snake .
